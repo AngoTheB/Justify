@@ -8,7 +8,7 @@ namespace J.Calculator.Models
         public Guid Id { get; set; }
         public string ContainerNo { get; set; }
         public DateTime Date { get; set; }
-        public IEnumerable<Charge> Charges { get; set; }
-        public IEnumerable<Invoice> Invoices { get; set; }
+        public IEnumerable<Charge> Charges { get; set; } = new List<Charge>();
+        public IEnumerable<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
 }

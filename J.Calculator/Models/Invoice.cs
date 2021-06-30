@@ -8,6 +8,6 @@ namespace J.Calculator.Models
         public Guid Id { get; set; }
         public string InvoiceNo { get; set; }
         public decimal Amount { get; set; }
-        public IEnumerable<Charge> Charges { get; set; }
+        public IEnumerable<Charge> Charges { get; set; } = new List<Charge>();
     }
 }
